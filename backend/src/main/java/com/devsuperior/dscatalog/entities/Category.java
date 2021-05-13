@@ -1,11 +1,11 @@
 package com.devsuperior.dscatalog.entities;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
+@Table( name= "tb_category" )       // gera tabela
 public class Category  implements Serializable {
     private static final long serialVersion = 1L;
 
