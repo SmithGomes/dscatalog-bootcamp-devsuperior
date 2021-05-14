@@ -2,6 +2,7 @@ package com.devsuperior.dscatalog.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.Objects;
 
 @Entity
@@ -14,13 +15,14 @@ public class Category implements Serializable {
     private long id;
     private String name;
 
-    public Category() {
-    }
+    public Category() { }
 
     public Category(long id, String name) {
         this.id = id;
         this.name = name;
     }
+
+
 
     public long getId() {
         return id;
