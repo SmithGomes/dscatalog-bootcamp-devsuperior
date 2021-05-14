@@ -76,7 +76,7 @@ public class CategoryService implements Serializable {
         }catch( EmptyResultDataAccessException e ){
             throw new ResourceNotFoundException( "Id not found " + id );
         }catch( DataIntegrityViolationException e ){
-            throw new DatabaseException( "Integrity violation ");
+            throw new DatabaseException( "Integrity violation ");   // caso uma categoria possa e deixar um produto sem categoria
         }
     }
 }
