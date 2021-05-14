@@ -6,7 +6,7 @@ import java.util.Objects;
 
 @Entity
 @Table( name= "tb_category" )       // gera tabela
-public class Category  implements Serializable {
+public class Category implements Serializable {
     private static final long serialVersion = 1L;
 
     @Id     // id da tabela
