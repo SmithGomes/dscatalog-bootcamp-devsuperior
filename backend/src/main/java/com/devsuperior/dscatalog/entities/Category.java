@@ -61,7 +61,7 @@ public class Category implements Serializable {
     public void preUpdate() {
         updatedAt = Instant.now();
     }
-    
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
